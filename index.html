@@ -38,69 +38,15 @@
     </style>
 </head>
 <body class="bg-white">
-    <!-- Header -->
-    <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="text-lg font-bold text-gray-900">Dr. Jonathan</div>
-                            <div class="text-xs text-gray-600">Reabilitação Oral</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Navigation -->
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Início</a>
-                    <a href="#sobre" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Sobre</a>
-                    <a href="#tratamentos" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Tratamentos</a>
-                    <a href="#transformacoes" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Transformações</a>
-                    <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">FAQ</a>
-                    <a href="#contato" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contato</a>
-                </nav>
-                
-                <!-- CTA Button -->
-                <button onclick="openWhatsApp()" class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg">
-                    Agendar Avaliação
-                </button>
-                
-                <!-- Mobile menu button -->
-                <button class="md:hidden p-2" onclick="toggleMobileMenu()">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#inicio" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Início</a>
-                <a href="#sobre" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Sobre</a>
-                <a href="#tratamentos" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Tratamentos</a>
-                <a href="#transformacoes" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Transformações</a>
-                <a href="#faq" class="block px-3 py-2 text-gray-700 hover:text-blue-600">FAQ</a>
-                <a href="#contato" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Contato</a>
-            </div>
-        </div>
-    </header>
+
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero-gradient pt-20 pb-16">
+    <section id="inicio" class="hero-gradient pt-16 pb-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
                 <div class="text-center lg:text-left">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                        Recupere Seu <span class="text-blue-600">Sorriso</span>, Sua <span class="text-blue-600">Mastigação</span> e Sua <span class="text-blue-600">Confiança</span>
+                        Recupere Seu <span style="color: #1f2b4b;">Sorriso</span>, Sua <span style="color: #1f2b4b;">Mastigação</span> e Sua <span style="color: #1f2b4b;">Confiança</span>
                     </h1>
                     <p class="text-lg md:text-xl text-gray-600 mb-4">
                         <strong>Sem Dor e com Resultados Naturais</strong>
@@ -108,7 +54,7 @@
                     <p class="text-lg text-gray-600 mb-8 max-w-2xl">
                         Reabilitação Oral personalizada para devolver dentes, estética e qualidade de vida
                     </p>
-                    <button onclick="openWhatsApp()" class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all shadow-xl transform hover:scale-105">
+                    <button onclick="openWhatsApp()" class="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-xl transform hover:scale-105" style="background: linear-gradient(135deg, #1f2b4b, #2a3a5c); hover:background: linear-gradient(135deg, #2a3a5c, #1f2b4b);">
                         Quero meu novo sorriso agora
                     </button>
                     
@@ -146,7 +92,7 @@
                         <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 -rotate-2">
                             <div class="w-64 h-80 bg-gradient-to-br from-gray-200 to-gray-300 rounded-xl mx-auto flex items-center justify-center">
                                 <div class="text-center">
-                                    <div class="w-20 h-20 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background-color: #1f2b4b;">
                                         <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                                         </svg>
@@ -274,8 +220,8 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgba(31, 43, 75, 0.1);">
+                        <svg class="w-8 h-8" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
@@ -284,8 +230,8 @@
                 </div>
                 
                 <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgba(31, 43, 75, 0.1);">
+                        <svg class="w-8 h-8" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                         </svg>
                     </div>
@@ -294,8 +240,8 @@
                 </div>
                 
                 <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgba(31, 43, 75, 0.1);">
+                        <svg class="w-8 h-8" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                         </svg>
                     </div>
@@ -304,8 +250,8 @@
                 </div>
                 
                 <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgba(31, 43, 75, 0.1);">
+                        <svg class="w-8 h-8" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
@@ -314,8 +260,8 @@
                 </div>
                 
                 <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgba(31, 43, 75, 0.1);">
+                        <svg class="w-8 h-8" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"/>
                         </svg>
                     </div>
@@ -324,8 +270,8 @@
                 </div>
                 
                 <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgba(31, 43, 75, 0.1);">
+                        <svg class="w-8 h-8" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                         </svg>
                     </div>
@@ -347,8 +293,8 @@
                     
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(31, 43, 75, 0.1);">
+                                <svg class="w-6 h-6" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
                             </div>
@@ -359,8 +305,8 @@
                         </div>
                         
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(31, 43, 75, 0.1);">
+                                <svg class="w-6 h-6" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                                 </svg>
                             </div>
@@ -371,8 +317,8 @@
                         </div>
                         
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(31, 43, 75, 0.1);">
+                                <svg class="w-6 h-6" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                                 </svg>
                             </div>
@@ -383,8 +329,8 @@
                         </div>
                         
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(31, 43, 75, 0.1);">
+                                <svg class="w-6 h-6" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                                 </svg>
                             </div>
@@ -395,8 +341,8 @@
                         </div>
                         
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: rgba(31, 43, 75, 0.1);">
+                                <svg class="w-6 h-6" style="color: #1f2b4b;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                                 </svg>
                             </div>
@@ -412,7 +358,7 @@
                     <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
                         <div class="w-full h-96 bg-gradient-to-br from-gray-200 to-gray-300 rounded-xl flex items-center justify-center">
                             <div class="text-center">
-                                <div class="w-24 h-24 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <div class="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center" style="background-color: #1f2b4b;">
                                     <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                                     </svg>
@@ -528,7 +474,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style="background: linear-gradient(135deg, #1f2b4b, #2a3a5c);">
                         <span class="text-2xl font-bold text-white">1</span>
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">Avaliação Completa</h3>
@@ -536,7 +482,7 @@
                 </div>
                 
                 <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style="background: linear-gradient(135deg, #1f2b4b, #2a3a5c);">
                         <span class="text-2xl font-bold text-white">2</span>
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">Planejamento Personalizado</h3>
@@ -544,7 +490,7 @@
                 </div>
                 
                 <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style="background: linear-gradient(135deg, #1f2b4b, #2a3a5c);">
                         <span class="text-2xl font-bold text-white">3</span>
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">Tratamento Confortável</h3>
@@ -552,7 +498,7 @@
                 </div>
                 
                 <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div class="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6" style="background: linear-gradient(135deg, #1f2b4b, #2a3a5c);">
                         <span class="text-2xl font-bold text-white">4</span>
                     </div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">Acompanhamento</h3>
@@ -639,12 +585,12 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section id="contato" class="py-20 bg-gradient-to-br from-blue-500 to-blue-600 text-white">
+    <section id="contato" class="py-20 text-white" style="background: linear-gradient(135deg, #1f2b4b, #2a3a5c);">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">
                 Seu novo sorriso começa agora
             </h2>
-            <p class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+            <p class="text-xl mb-8 text-white/80 max-w-2xl mx-auto">
                 Não deixe que problemas dentários continuem afetando sua qualidade de vida. 
                 Agende sua avaliação e descubra como podemos transformar seu sorriso.
             </p>
@@ -673,19 +619,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-         <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>© 2024 Dr. Jonathan - Todos os direitos reservados | CRO-SP 12345</p>
-            </div>
-    </footer>
+
 
     <script>
-        // Mobile menu toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
+
 
         // FAQ toggle
         function toggleFAQ(index) {
@@ -720,15 +657,7 @@
             });
         });
 
-        // Header background on scroll
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.classList.add('shadow-lg');
-            } else {
-                header.classList.remove('shadow-lg');
-            }
-        });
+
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'983c0c8d3756f16d',t:'MTc1ODY1MTU1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'983c290c11bbcb3c',t:'MTc1ODY1MjcyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
