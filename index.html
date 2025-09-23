@@ -41,17 +41,26 @@
 
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero-gradient pt-16 pb-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="inicio" class="relative pt-16 pb-16 overflow-hidden">
+        <!-- Imagem de fundo da clínica com blur -->
+        <div class="absolute inset-0">
+            <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-600 font-medium text-xl">
+                <img src="/imagens/clinica.jpg" alt="">
+            </div>
+            <div class="absolute inset-0 backdrop-blur-sm" style="background-color: rgba(31, 43, 75, 0.4);"></div>
+        </div>
+        
+        <!-- Conteúdo da hero section -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
                 <div class="text-center lg:text-left">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                        Recupere Seu <span style="color: #1f2b4b;">Sorriso</span>, Sua <span style="color: #1f2b4b;">Mastigação</span> e Sua <span style="color: #1f2b4b;">Confiança</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                        Recupere Seu <span style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Sorriso</span>, Sua <span style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Mastigação</span> e Sua <span style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Confiança</span>
                     </h1>
-                    <p class="text-lg md:text-xl text-gray-600 mb-4">
+                    <p class="text-lg md:text-xl text-white mb-4" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
                         <strong>Sem Dor e com Resultados Naturais</strong>
                     </p>
-                    <p class="text-lg text-gray-600 mb-8 max-w-2xl">
+                    <p class="text-lg text-white/90 mb-8 max-w-2xl" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
                         Reabilitação Oral personalizada para devolver dentes, estética e qualidade de vida
                     </p>
                     <button onclick="openWhatsApp()" class="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-xl transform hover:scale-105" style="background: linear-gradient(135deg, #1f2b4b, #2a3a5c); hover:background: linear-gradient(135deg, #2a3a5c, #1f2b4b);">
@@ -59,14 +68,14 @@
                     </button>
                     
                     <!-- Trust indicators -->
-                    <div class="flex flex-wrap justify-center lg:justify-start items-center gap-6 mt-8 text-sm text-gray-600">
+                    <div class="flex flex-wrap justify-center lg:justify-start items-center gap-6 mt-8 text-sm text-white">
                         <div class="flex items-center space-x-2">
                             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
                                 <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                 </svg>
                             </div>
-                            <span>Tratamento sem dor</span>
+                            <span style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Tratamento sem dor</span>
                         </div>
                         <div class="flex items-center space-x-2">
                             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
@@ -74,7 +83,7 @@
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                 </svg>
                             </div>
-                            <span>Resultados naturais</span>
+                            <span style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Resultados naturais</span>
                         </div>
                         <div class="flex items-center space-x-2">
                             <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
@@ -82,33 +91,18 @@
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                 </svg>
                             </div>
-                            <span>Acompanhamento completo</span>
+                            <span style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Acompanhamento completo</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="relative">
-                    <!-- Imagem de fundo da clínica com blur -->
-                    <div class="absolute inset-0 rounded-2xl overflow-hidden">
-                        <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-600 font-medium">
-                            <img src="/imagens/clinica.jpg" alt="">
-                        </div>
-                        <div class="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
-                    </div>
-                    
-                    <!-- Conteúdo sobreposto -->
+                    <!-- Card do Dr. Jonathan -->
                     <div class="relative bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-8 transform rotate-2">
                         <div class="bg-gradient-to-br from-white/80 to-white/60 rounded-xl p-8 -rotate-2">
-                            <div class="w-64 h-80 bg-white/50 backdrop-blur-sm rounded-xl mx-auto flex items-center justify-center border border-white/30">
-                                <div class="text-center">
-                                    <div class="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style="background-color: #1f2b4b;">
-                                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="text-gray-800 font-medium">Dr. Jonathan</div>
-                                    <div class="text-gray-600 text-sm">Especialista em</div>
-                                    <div class="text-gray-600 text-sm">Reabilitação Oral</div>
+                            <div class="w-64 h-80 bg-white/50 backdrop-blur-sm rounded-xl mx-auto overflow-hidden border border-white/30">
+                                <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center text-gray-600 font-medium">
+                                    <img src="imagens/dr 3.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -366,7 +360,7 @@
                 <div class="relative">
                     <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
                         <div class="w-full h-96 bg-gradient-to-br from-gray-200 to-gray-300 rounded-xl flex items-center justify-center text-gray-600 font-medium text-lg">
-                           <img src="/imagens/dr 2.jpg" alt="">
+                           <img src="/imagens/dr 1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -647,5 +641,5 @@
 
 
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'983c2ddb330fe16e',t:'MTc1ODY1MjkxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'983c3852e027fd60',t:'MTc1ODY1MzM0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
